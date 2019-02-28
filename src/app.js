@@ -63,13 +63,21 @@ ${componentName}.STATE = {}
 `;
 
   try {
-    fs.appendFile(`${componentName}.js`, jsxTemp);
+    fs.appendFile(`${componentName}.js`, jsxTemp, error => {
+      if (error) {
+        throw new Error(error);
+      }
+    });
   } catch (error) {
     console.error(chalk.yellow('Unable to create component'));
   }
 
   try {
-    fs.appendFile(`${componentName}.scss`, scssTemp);
+    fs.appendFile(`${componentName}.scss`, scssTemp, error => {
+      if (error) {
+        throw new Error(error);
+      }
+    });
   } catch (error) {
     console.error(chalk.yellow('Unable to create scss file'));
   }
@@ -77,8 +85,6 @@ ${componentName}.STATE = {}
   console.log(chalk.green('Done.'));
 
   fs.readdir('.', function(err, items) {
-    console.log(items);
-
     for (var i = 0; i < items.length; i++) {
       console.log(items[i]);
     }
