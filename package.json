@@ -1,6 +1,7 @@
 {
   "bin": {
-    "metalgen": "index.js"
+    "metalgen": "index.js",
+    "smelt": "index.js"
   },
   "engines": {
     "node": ">=6"
