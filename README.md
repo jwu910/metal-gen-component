@@ -29,7 +29,7 @@ MyApplication.js
 
 import Component, {Config} from 'metal-jsx';
 
-import classNames from './MyApplication.scss';
+import './MyApplication.scss';
 
 export default class MyApplication extends Component {
 	created() {}
@@ -38,7 +38,7 @@ export default class MyApplication extends Component {
 
 	render() {
 		return (
-			<div class="{classNames['my-application-container']}>
+			<div class="my-application-container">
 
 			</div>
 		);
