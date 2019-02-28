@@ -14,12 +14,14 @@ This generator takes one argument. Component name in kebab-format.
 
 ```
 metalgen <component-name>
+smelt <component-name>
 ```
 
 example:
 
 ```
 metalgen my-application
+smelt my-application
 ```
 
 outputs in your current working directory:
