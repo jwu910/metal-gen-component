@@ -35,7 +35,7 @@ export const start = args => {
 
   const jsxTemp = `import Component, {Config} from 'metal-jsx';
 
-import classNames from './${componentName}.scss';
+import './${componentName}.scss';
 
 export default class ${componentName} extends Component {
 	created() {}
@@ -44,7 +44,7 @@ export default class ${componentName} extends Component {
 
 	render() {
 		return (
-			<div class={classNames['${cssClass}-container']}>
+			<div class="${cssClass}-container">
 
 			</div>
 		);
