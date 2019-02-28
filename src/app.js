@@ -1,7 +1,25 @@
 import chalk from 'chalk';
 import fs from 'fs';
+import path from 'path';
+import updateNotifier from 'update-notifier';
+
+const pkg = require(path.resolve(__dirname, '../package.json'));
+
+const notifier = updateNotifier({ pkg });
+
+if (notifier.update) {
+  notifier.notify();
+}
 
 export const start = args => {
+  if (!args.length > 0) {
+    console.error(
+      chalk.red('Please provide a component name in the format "my-component"'),
+    );
+
+    process.exit(1);
+  }
+
   const cssClass = args[0];
 
   const componentName = cssClass
