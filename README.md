@@ -2,6 +2,12 @@
 
 Generate a Metal.js JSX component and SCSS file at working directory using CSS Modules syntax
 
+## Installation
+
+```
+npm install --global metal-gen-component
+```
+
 ## Usage
 
 This generator takes one argument. Component name in kebab-format.
@@ -16,7 +22,7 @@ example:
 metalgen my-application
 ```
 
-outputs:
+outputs in your current working directory:
 
 ```
 MyApplication.js
