@@ -11,7 +11,7 @@
     "README.md"
   ],
   "name": "metal-gen-component",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Metal JSX component boilerplate",
   "main": "index.js",
   "scripts": {
