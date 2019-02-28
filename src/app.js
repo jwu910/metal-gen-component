@@ -44,7 +44,7 @@ export default class ${componentName} extends Component {
 
 	render() {
 		return (
-			<div class="${cssClass}-container">
+			<div class={classNames['${cssClass}-container']}>
 
 			</div>
 		);
