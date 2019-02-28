@@ -1,0 +1,11 @@
+{
+  "name": "metal-gen-component",
+  "version": "1.0.0",
+  "description": "Metal JSX component boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Wu",
+  "license": "MIT"
+}
