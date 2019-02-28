@@ -32,7 +32,7 @@ export default class MyApplication extends Component {
 
 	render() {
 		return (
-			<div class="my-application-container">
+			<div class="{classNames['my-application-container']}>
 
 			</div>
 		);
