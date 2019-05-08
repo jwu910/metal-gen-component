@@ -38,6 +38,10 @@ export const start = args => {
 import './${componentName}.scss';
 
 export default class ${componentName} extends Component {
+	static PROPS = {}
+
+	static STATE = {}
+
 	created() {}
 
 	attached() {}
@@ -50,10 +54,6 @@ export default class ${componentName} extends Component {
 		);
 	}
 }
-
-${componentName}.PROPS = {}
-
-${componentName}.STATE = {}
 `;
 
   const scssTemp = `@import "~styles/variables";
